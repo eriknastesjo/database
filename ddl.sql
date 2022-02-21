@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 DROP DATABASE IF EXISTS shop;
 CREATE DATABASE shop;
 USE shop;
 
 
 
+=======
+DROP DATABASE IF EXISTS eshop;
+CREATE DATABASE eshop;
+USE eshop;
+
+-- NAMN eshop i kraven!!!
+
+-- UTAN FK sist, MED FK först 
+>>>>>>> 8b8a179 (init)
 DROP TABLE IF EXISTS logg;
 DROP TABLE IF EXISTS faktura_rad;
 DROP TABLE IF EXISTS faktura;
@@ -11,9 +21,15 @@ DROP TABLE IF EXISTS produkt_kategori;
 DROP TABLE IF EXISTS kundorder_produkt;
 DROP TABLE IF EXISTS kundorder;
 
+<<<<<<< HEAD
 DROP TABLE IF EXISTS kategori;
 DROP TABLE IF EXISTS produkt;
 DROP TABLE IF EXISTS kund;
+=======
+DROP TABLE IF EXISTS kund;
+DROP TABLE IF EXISTS produkt;
+DROP TABLE IF EXISTS kategori;
+>>>>>>> 8b8a179 (init)
 
 CREATE TABLE kund
 (
@@ -129,3 +145,5 @@ CREATE TABLE logg
     FOREIGN KEY(kundorder_ordernummer) REFERENCES kundorder(ordernummer),
     FOREIGN KEY(faktura_fakturanummer) REFERENCES faktura(fakturanummer)
 );
+
+SHOW TABLES;
