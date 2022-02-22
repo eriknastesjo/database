@@ -1,11 +1,3 @@
-DROP DATABASE IF EXISTS eshop;
-CREATE DATABASE eshop;
-USE eshop;
-
--- klient koppling - db motor
--- undvika problem med svenska tecken
-SET NAMES utf8;
-
 -- UTAN FK sist, MED FK först
 DROP TABLE IF EXISTS logg;
 DROP TABLE IF EXISTS faktura_rad;
@@ -56,7 +48,6 @@ CREATE TABLE produkt_kategori
 -----------------------------------------------------------------
 -- KUND
 -- kund, kundorder, kundorder_rad
---
 
 CREATE TABLE kund
 (
@@ -144,6 +135,18 @@ CREATE TABLE stock
     id INT AUTO_INCREMENT,
     produkt INT,
     lagerhylla INT,
+    produkt INT,
+    antal INT,
+
+    PRIMARY KEY(hylla),
+    FOREIGN KEY(produkt) REFERENCES produkt(produktkod)
+);
+
+CREATE TABLE stock
+(
+    id INT AUTO_INCREMENT,
+    produkt INT,
+    hylla INT,
     antal INT,
 
     PRIMARY KEY (id),
