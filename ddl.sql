@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 DROP DATABASE IF EXISTS shop;
 CREATE DATABASE shop;
 USE shop;
@@ -11,13 +12,25 @@ DROP DATABASE IF EXISTS eshop;
 CREATE DATABASE eshop;
 USE eshop;
 -- NAMN eshop i kraven!!!
+=======
+--
+-- Create eshop database
+--
+
+DROP DATABASE IF EXISTS eshop;
+CREATE DATABASE eshop;
+USE eshop;
+>>>>>>> 82a6e2c (sql updates)
 
 -- klient koppling - db motor
 -- undvika problem med svenska tecken
 SET NAMES utf8;
 
+<<<<<<< HEAD
 =======
 >>>>>>> fae62fd (sql updates)
+=======
+>>>>>>> 82a6e2c (sql updates)
 -- UTAN FK sist, MED FK först 
 >>>>>>> 8b8a179 (init)
 DROP TABLE IF EXISTS logg;
@@ -163,13 +176,13 @@ CREATE TABLE lagerhylla
 CREATE TABLE stock 
 (
     id INT AUTO_INCREMENT,
-    produkt_id INT,
-    hyll_id INT,
+    produkt INT,
+    hylla INT,
     antal INT,
 
     PRIMARY KEY (id),
-    FOREIGN KEY (produkt_id) REFERENCES produkt(produktkod),
-    FOREIGN KEY (hyll_id) REFERENCES lagerhylla(hylla)
+    FOREIGN KEY (produkt) REFERENCES produkt(produktkod),
+    FOREIGN KEY (hylla) REFERENCES lagerhylla(hylla)
 );
 
 
