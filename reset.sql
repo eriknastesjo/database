@@ -6,9 +6,7 @@ source setup.sql;
 
 use eshop;
 
-source ddl.sql
---- mer filers
-
+source ddl.sql;
 
 -- Tabell koll
 SHOW FULL TABLES;

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 DROP DATABASE IF EXISTS shop;
 CREATE DATABASE shop;
 USE shop;
@@ -15,6 +16,8 @@ USE eshop;
 -- undvika problem med svenska tecken
 SET NAMES utf8;
 
+=======
+>>>>>>> fae62fd (sql updates)
 -- UTAN FK sist, MED FK först 
 >>>>>>> 8b8a179 (init)
 DROP TABLE IF EXISTS logg;

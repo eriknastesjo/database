@@ -9,17 +9,17 @@ Läs igenom samtliga krav innan du börjar jobba.
 
 - Skapa en ny sida med rubrik “Fysisk modell” och utför och dokumentera alla delsteg för den fysiska modelleringsfasen. Du skall skapa SQL DDL men du skall inte skapa INSERT, UPDATE, DELETE eller SELECT. [x]
 
-- Berätta i dokumentet hur du gjorde för att skapa SQL DDL (per hand eller genererade). SQL DDL lägger du som ett Appendix i ditt dokument, för information, använd ett rimligt typsnitt. [/]
+- Berätta i dokumentet hur du gjorde för att skapa SQL DDL (per hand eller genererade). SQL DDL lägger du som ett Appendix i ditt dokument, för information, använd ett rimligt typsnitt. [x]
 
-- Din SQL DDL sparar du även som egen fil i ddl.sql. Denna filen skall innehålla SQL för att skapa databasens schema. [/]
+- Din SQL DDL sparar du även som egen fil i ddl.sql. Denna filen skall innehålla SQL för att skapa databasens schema. [x]
 
-- Skapa en fil setup.sql som skapar databasen eshop (CREATE DATABASE). [/]
+- Skapa en fil setup.sql som skapar databasen eshop (CREATE DATABASE). [x]
 
 - Försäkra dig om att din SQL DDL (setup.sql, ddl.sql) fungerar och skapar den databasen och de tabellerna du vill ha. Du behöver inte lägga in någon data i tabellerna, eller provköra databasen, det gör vi senare. [x]
 
-- Spara ditt orginal dokument i katalogen du jobbar. Generera även en PDF som er.pdf. [/]
+- Spara ditt original dokument i katalogen du jobbar. Generera även en PDF som er.pdf. [x]
 
-- Tips. Skapa även en reset.sql så du snabbt och enkelt kan återskapa och återställa din databas. []
+- Tips. Skapa även en reset.sql så du snabbt och enkelt kan återskapa och återställa din databas. [x]
 
 När du är klar så publicerar du ditt kursrepo. []
 
