@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-DROP DATABASE IF EXISTS shop;
-CREATE DATABASE shop;
-USE shop;
-
-
-
-=======
-DROP DATABASE IF EXISTS eshop;
-CREATE DATABASE eshop;
-USE eshop;
--- NAMN eshop i kraven!!!
-=======
 --
 -- Create eshop database
 --
@@ -20,19 +5,12 @@ USE eshop;
 DROP DATABASE IF EXISTS eshop;
 CREATE DATABASE eshop;
 USE eshop;
->>>>>>> 82a6e2c (sql updates)
 
 -- klient koppling - db motor
 -- undvika problem med svenska tecken
 SET NAMES utf8;
 
-<<<<<<< HEAD
-=======
->>>>>>> fae62fd (sql updates)
-=======
->>>>>>> 82a6e2c (sql updates)
 -- UTAN FK sist, MED FK först 
->>>>>>> 8b8a179 (init)
 DROP TABLE IF EXISTS logg;
 DROP TABLE IF EXISTS faktura_rad;
 DROP TABLE IF EXISTS faktura;
@@ -40,15 +18,9 @@ DROP TABLE IF EXISTS produkt_kategori;
 DROP TABLE IF EXISTS kundorder_produkt;
 DROP TABLE IF EXISTS kundorder;
 
-<<<<<<< HEAD
-DROP TABLE IF EXISTS kategori;
-DROP TABLE IF EXISTS produkt;
-DROP TABLE IF EXISTS kund;
-=======
 DROP TABLE IF EXISTS kund;
 DROP TABLE IF EXISTS produkt;
 DROP TABLE IF EXISTS kategori;
->>>>>>> 8b8a179 (init)
 
 
 ------------------------------------------
@@ -220,4 +192,3 @@ FROM kundorder as ko
 SHOW TABLES;
 
 DESCRIBE plocklista;
-
